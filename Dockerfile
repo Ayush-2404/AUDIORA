@@ -1,3 +1,4 @@
+main
 Audio-Engine-Branch
 FROM python:3.11
 
@@ -24,3 +25,15 @@ COPY --from=0 /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 main
+
+FROM golang:1.21
+
+WORKDIR /app
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+
+RUN go build -o server
+EXPOSE 8000
+CMD ["./server"]
+Backend-Branch
