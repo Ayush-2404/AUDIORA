@@ -1,0 +1,50 @@
+version: '3.8'  # Always good to specify version
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - '3000:80'
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    image: audiora01-backend
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./temp:/app/temp
+    depends_on:
+      - engine
+      - mongo    
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+
+  engine:
+    build:
+      context: ./audio-processing
+      dockerfile: Dockerfile.engine
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./audio-processing/temp:/app/audio-processing/temp
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+
+  mongo:
+    image: mongo:6.0.23
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7.2
+    ports:
+      - '6379:6379'
+
+volumes:
+  mongo_data:

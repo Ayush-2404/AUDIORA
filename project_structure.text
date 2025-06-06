@@ -1,0 +1,137 @@
+- .gitignore
+- audio-processing
+  - add_sample_songs.py
+  - db.py
+  - demo.wav
+  - Dockerfile.engine
+  - fingerprint_to_json.py
+  - match_audio.py
+  - query.json
+  - requirements.txt
+  - sample_songs
+    - Arijit Singh, Shreya Ghoshal - Samjhawan - Lyric video _ Alia B, Varun D _ Humpty Sharma Ki Dulhania [H2f7MZaw3Yo].wav
+    - Kithe Gaya Tu Saaiyaan-128kbps.wav
+    - Main Hi Ishq Hoon-128kbps.wav
+    - O Shera Teer Te Taj Film Version-128kbps.wav
+    - Parwardigara Kesari Version-128kbps.wav
+  - server.py
+  - temp
+    - audio_1747849424800948608.wav
+  - test.wav
+  - test1.wav
+  - utils.py
+  - __pycache__
+    - db.cpython-312.pyc
+    - utils.cpython-312.pyc
+- backend
+  - Dockerfile.backend
+  - go.mod
+  - go.sum
+  - handlers
+    - audio.go
+  - main.go
+  - routes
+    - router.go
+  - temp
+    - audio_1747411389780268200.wav
+- docker-compose.yml
+- exported_data.json
+- frontend
+  - .dockerignore
+  - .gitignore
+  - bun.lockb
+  - components.json
+  - Dockerfile.frontend
+  - eslint.config.js
+  - index.html
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - public
+    - index.html
+    - placeholder.svg
+    - robots.txt
+  - src
+    - api
+      - audioService.ts
+    - App.css
+    - App.js
+    - App.tsx
+    - components
+      - AudioRecorder.tsx
+      - AudioWaveform.tsx
+      - LoadingSpinner.tsx
+      - RecordButton.tsx
+      - ui
+        - accordion.tsx
+        - alert-dialog.tsx
+        - alert.tsx
+        - aspect-ratio.tsx
+        - avatar.tsx
+        - badge.tsx
+        - breadcrumb.tsx
+        - button.tsx
+        - calendar.tsx
+        - card.tsx
+        - carousel.tsx
+        - chart.tsx
+        - checkbox.tsx
+        - collapsible.tsx
+        - command.tsx
+        - context-menu.tsx
+        - dialog.tsx
+        - drawer.tsx
+        - dropdown-menu.tsx
+        - form.tsx
+        - hover-card.tsx
+        - input-otp.tsx
+        - input.tsx
+        - label.tsx
+        - menubar.tsx
+        - navigation-menu.tsx
+        - pagination.tsx
+        - popover.tsx
+        - progress.tsx
+        - radio-group.tsx
+        - resizable.tsx
+        - scroll-area.tsx
+        - select.tsx
+        - separator.tsx
+        - sheet.tsx
+        - sidebar.tsx
+        - skeleton.tsx
+        - slider.tsx
+        - sonner.tsx
+        - switch.tsx
+        - table.tsx
+        - tabs.tsx
+        - textarea.tsx
+        - toast.tsx
+        - toaster.tsx
+        - toggle-group.tsx
+        - toggle.tsx
+        - tooltip.tsx
+        - use-toast.ts
+    - hooks
+      - use-mobile.tsx
+      - use-toast.ts
+    - index.css
+    - index.js
+    - lib
+      - utils.ts
+    - main.tsx
+    - pages
+      - Error.tsx
+      - Index.tsx
+      - NotFound.tsx
+      - Result.tsx
+    - vite-env.d.ts
+  - tailwind.config.ts
+  - tsconfig.app.json
+  - tsconfig.json
+  - tsconfig.node.json
+  - vite.config.ts
+- README.md
+- temp
+  - audio_1748254202448841500.wav
+  - audio_1748254235960365961.wav
